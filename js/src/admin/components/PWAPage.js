@@ -108,20 +108,18 @@ export default class PWAPage extends ExtensionPage {
                 </div>
                 <input
                   className="FormControl"
-                  value={this.manifest.short_name}
-                  disabled={true}
+                  bidi={this.values["askvortsov-pwa.shortName"]}
                 ></input>
               </fieldset>
               <fieldset>
                 <div className="helpText">
                   {app.translator.trans(
-                    "askvortsov-pwa.admin.pwa.about.name_text"
+                    "askvortsov-pwa.admin.pwa.about.long_name_text"
                   )}
                 </div>
                 <input
                   className="FormControl"
                   bidi={this.values["askvortsov-pwa.longName"]}
-                  required={true}
                 />
               </fieldset>
               <fieldset>
